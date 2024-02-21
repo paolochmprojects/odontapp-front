@@ -1,8 +1,14 @@
 import { Form } from "react-router-dom"
 import BracesImg from "../assets/braces.jpg"
 import BrushImg from "../assets/brush-teeth.jpg"
+import { useEffect } from "react"
 
 const HomePage = () => {
+
+    useEffect(() => {
+        document.title = "Home - OdontApp"
+    })
+
     return (
 
         <main className="flex-grow mt-20">
@@ -28,7 +34,7 @@ const HomePage = () => {
                 <div className="max-w-screen-lg mx-auto bg-black text-white min-h-80 p-10">
                     <h2 className="font-bebas-neue text-4xl">Caracteristicas</h2>
                     <div className="flex flex-wrap items-center">
-                        <ul className="px-6 py-2 md:w-1/3">
+                        <ul className="px-6 md:py-2 md:w-1/3">
                             <li className="mt-4">
                                 <h3 className="font-bebas-neue text-2xl">Numero de pacientes ilimitados</h3>
                                 <p>
@@ -42,7 +48,7 @@ const HomePage = () => {
                                 </p>
                             </li>
                         </ul>
-                        <ul className="px-6 py-2 md:w-1/3">
+                        <ul className="px-6 md:py-2 md:w-1/3">
                             <li className="mt-4">
                                 <h3 className="font-bebas-neue text-2xl">Manejo de citas</h3>
                                 <p>

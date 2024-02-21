@@ -2,6 +2,8 @@ import { Route, createBrowserRouter, createRoutesFromElements } from "react-rout
 import Root from "./routes/root";
 import NotFoundPage from "./pages/NotFoundPage";
 import HomePage from "./pages/HomePage";
+import {action as loginAction} from "./routes/login";
+import {action as registerAction} from "./routes/register";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 
@@ -10,8 +12,8 @@ const router = createBrowserRouter(
         <Route>
             <Route path="/" element={<Root />}>
                 <Route index element={<HomePage/>}/>
-                <Route path="/login" element={<LoginPage/>}/>
-                <Route path="/register" element={<RegisterPage/>}/>
+                <Route path="/login" element={<LoginPage/>} action={loginAction}/>
+                <Route path="/register" element={<RegisterPage/>} action={registerAction}/>
             </Route>
             <Route path="*" element={<NotFoundPage />} />
         </Route>

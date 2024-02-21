@@ -2,8 +2,14 @@ import { Link } from "react-router-dom"
 import FooterComponent from "../components/FooterCompnent.tsx"
 import HeaderComponent from "../components/HeaderComponent"
 import TheetImg from "../assets/teeth.png"
+import { useEffect } from "react"
 
 const NotFoundPage = () => {
+
+    useEffect(()=>{
+        document.title = "No encontrado - OdontApp"
+    })
+
     return (
         <div className="flex flex-col min-h-screen">
             <HeaderComponent />
