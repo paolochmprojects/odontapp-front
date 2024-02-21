@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom"
 const HeaderComponent = () => {
     return (
         <header>
-            <div className="fixed w-full bg-white">
+            <div className="w-full bg-white fixed z-20">
                 <div className="flex max-w-screen-lg mx-auto p-5 justify-between items-center">
                     <div>
                         <Link to="/">
