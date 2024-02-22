@@ -20,11 +20,11 @@ const router = createBrowserRouter(
                 <Route path="/login" element={<LoginPage/>} action={loginAction}/>
                 <Route path="/register" element={<RegisterPage/>} action={registerAction}/>
             </Route>
-            <Route path="dashboard" element={<Dashboard/>}>
+            <Route path="/dashboard" element={<Dashboard/>}>
                 <Route index element={<DashboardPage/>}/>
-                <Route path="contact" element={<ContactPage/>}/>
-                <Route path="report" element={<ReportPage/>}/>
-                <Route path="settings" element={<SettingsPage/>}/>
+                <Route path="/dashboard/contact" element={<ContactPage/>}/>
+                <Route path="/dashboard/report" element={<ReportPage/>}/>
+                <Route path="/dashboard/settings" element={<SettingsPage/>}/>
             </Route>
             <Route path="*" element={<NotFoundPage />} />
         </Route>
