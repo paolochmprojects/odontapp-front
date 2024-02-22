@@ -63,7 +63,7 @@ const HomePage = () => {
                             </li>
                         </ul>
                         <div className="mt-4 md:w-1/3">
-                            <img className="rounded-2xl shadow-xl shadow-slate-800" src={BrushImg} alt="" />
+                            <img className="rounded-2xl shadow-xl shadow-slate-800 skew-y-3" src={BrushImg} alt="" />
                         </div>
                     </div>
                 </div>
