@@ -1,4 +1,4 @@
-import { Route, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Root from "./routes/root";
 import NotFoundPage from "./pages/NotFoundPage";
 import HomePage from "./pages/HomePage";
@@ -37,27 +37,27 @@ const router = createBrowserRouter([
         path: "/dashboard",
         element: <Dashboard />,
         children: [
-            { 
-                index: true, 
-                element: <DashboardPage /> 
+            {
+                index: true,
+                element: <DashboardPage />
             },
             {
-                path:"contact",
-                element:<ContactPage/>
+                path: "contact",
+                element: <ContactPage />
             },
             {
-                path:"report",
-                element: <ReportPage/>
+                path: "report",
+                element: <ReportPage />
             },
             {
-                path:"settings",
-                element: <SettingsPage/>
+                path: "settings",
+                element: <SettingsPage />
             }
         ]
     },
     {
         path: "/*",
-        element: <NotFoundPage/>
+        element: <NotFoundPage />
     }
 ])
 
