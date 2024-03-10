@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom"
 import HeaderDashComponent from "../components/HeaderDashComponent"
-import FooterComponent from "../components/FooterCompnent.tsx"
-import SideDashComponent from "../components/SideDashComponent.tsx"
+import FooterComponent from "../components/FooterComponent"
+import SideDashComponent from "../components/SideDashComponent"
 import { useState } from "react"
 
 const Dashboard = () => {

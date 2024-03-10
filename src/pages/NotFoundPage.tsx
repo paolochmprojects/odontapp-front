@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import FooterComponent from "../components/FooterCompnent.tsx"
+import FooterComponent from "../components/FooterComponent"
 import HeaderComponent from "../components/HeaderComponent"
 import TheetImg from "../assets/teeth.png"
 import { useEffect } from "react"

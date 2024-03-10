@@ -1,6 +1,6 @@
 import HeaderComponent from "../components/HeaderComponent"
 import { Outlet } from "react-router-dom"
-import FooterComponent from "../components/FooterCompnent.tsx"
+import FooterComponent from "../components/FooterComponent"
 
 const Root = () => {
 
